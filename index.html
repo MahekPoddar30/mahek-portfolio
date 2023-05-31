@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahek Poddar - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 4, 4);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(39, 39, 41);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(243, 195, 24);
+            font-size: 1.15rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(234, 196, 57);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: centre;
+            margin: 110px 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            margin: 80px 0;
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(255, 177, 10)
+        }
+
+        .text-gray {
+            color: rgb(102, 102, 100);
+        }
+
+        #element {
+            color: rgb(255, 177, 10)
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .secondSection h1 {
+            margin: 40px 0;
+            font-size: 2.0rem;
+        }
+
+        .btn {
+            margin: auto;
+            padding: 12px;
+            background: rgb(39, 39, 41);
+            color: white;
+            border: 2px solid rgb(255, 177, 10);
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .buttons {
+            padding: 73px;
+
+        }
+
+        .btn:hover {
+            color: rgb(243, 195, 24);
+            font-size: 1.15rem;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 75vh;
+        }
+
+        .education {
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .education h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            /* color: ; */
+        }
+
+        .education-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .education-item h3 {
+            font-size: 20px;
+            color: rgb(243, 195, 24);
+            margin-bottom: 5px;
+        }
+
+        .education-date {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .education-degree {
+            font-size: 16px;
+            color: #717070;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .education-description {
+            font-size: 16px;
+            color: #777;
+        }
+
+
+
+        footer {
+            background-color: rgb(24, 24, 24);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style-type: disc;
+        }
+
+        .footer>div {
+            width: 533px;
+        }
+
+        .fourthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 135vh;
+        }
+
+        .experience {
+            margin-bottom: 40px;
+            border-left: 4px solid rgb(255, 177, 10);
+            padding-left: 20px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-style: italic;
+            color: #fcc331;
+            margin-bottom: 10px;
+        }
+
+        .dates {
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            margin-top: 10px;
+            color: #8c8b8b;
+        }
+
+        .fifthSection {
+            max-width: 130vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-right: 100px;
+        }
+
+        .project img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .project-details h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .project-details p {
+            margin-top: 10px;
+        }
+
+        .project-details a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #f3efef;
+            text-decoration: none;
+            font-weight: lighter;
+            border: 2px solid ffb10a;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .project-details a:hover {
+            background-color: #171616;
+            color: #fcc331;
+        }
+
+        .project {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 40px;
+            margin-left: 50px;
+        }
+
+        .project img {
+            width: 70%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .project-details {
+            padding: 20px;
+            background-color: rgb(39, 39, 41);
+            border-radius: 10px;
+        }
+
+        .project-details h3 {
+            margin: 0;
+            font-size: 24px;
+            color: ffb10;
+        }
+
+        .project-details p {
+            margin-top: 10px;
+            color: rgb(253, 253, 253);
+
+        }
+
+        .project-details a {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid rgb(243, 167, 26);
+            border-radius: 4px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .project-details a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .sixthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .contact {
+            padding: 60px;
+            background-color: #000;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #111;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-field,
+        .textarea-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .textarea-field {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: rgb(243, 167, 26);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-social {
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-social a i {
+            font-size: 20px;
+        }
+
+        .eightSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .skills {
+            padding: 40px;
+        }
+
+        .skill {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+
+        .skill-card {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #211f1f;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-15px);
+        }
+
+        .skill-card img {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+
+        .skill-card h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Mahek's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Mahek</span>
+                <div> and I am a zealous </div>
+                <span id="element"> </span>
+            </div>
+            <div class="rightsection">
+                <img src="firstpic.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="about">
+            <span class="text-gray">You will be occupied for the next 2 minutes exploring insights about me </span>
+            <h1>About Me</h1>
+            Hello! I am Mahek Poddar, a ECE student from VIT, Vellore. I am a versatile individual with a passion for
+            technology, research and designing. With a solid foundation in UI/UX, data analysis and electronics. I have
+            honed my skills through various internships and research projects. My knowledge in the field of electronics
+            and
+            programming has helped me to work with mind bogling projects.
+            My ultimate goal is to combine my technical knowledge and my research skills to develop innovative solutions
+            and
+            share my ideas with the world. I am constantly learning and striving to improve myself, both professionally
+            and
+            personally. I am excited about the possibilities that await and look forward to connecting with like-minded
+            individuals who share my interests and enthusiasm.
+            <div class="buttons">
+                <a href="https://drive.google.com/file/d/1KEwYje_EDkMJUwdjAOd9tMeQGS3mh1WP/view?usp=sharing" button
+                    class="btn">My Resume</button></a>
+                <a href="https://www.linkedin.com/in/mahek-poddar-997b78211/" button class="btn"> My
+                    Linkedin</button></a>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdSection" id="education">
+            <span class="text-gray">My Education journey </span>
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Vellore Institute of Technology</h3>
+                <p class="education-date">2020 - 2022</p>
+                <p class="education-degree">Bachelor of Technology in Electronics and Communication Engineering</p>
+                <p class="education-description">Current CGPA 9.0/10, Chairperson of IETE-ISF, Placement coordinator,
+                    Ex-Outbound Lead of ANOKHA NGO.</p>
+            </div>
+            <div class="education-item">
+                <h3>Army Public School-Shillong</h3>
+                <p class="education-date">2018 -2020</p>
+                <p class="education-description"> Pure Science(Physics, Chemistry, Mathematics and Computer SWcience)
+                    Percentage scored in class 12: 94.3%.</p>
+            </div>
+            <div class="education-item">
+                <h3>Loreto Convent</h3>
+                <p class="education-date">2006 - 2018</p>
+                <p class="education-description">Percentage scored in class 10: 95.8%. Head Girl for the year 2017,
+                    State level and District level Debate Champion, Eastern zone Best Speaker Award. State level Scholl
+                    marching team commander</p>
+            </div>
+        </section>
+        <hr>
+        <section class="fourthSection" id="experience">
+            <span class="text-gray">Co-Curricular Activities and Work Experience</span>
+            <h3>Experience</h3>
+
+            <div class="experience">
+                <p class="job-title">Summer Intern</p>
+                <p class="company">Bharat Sanchar Nigam Limited</p>
+                <p class="dates">May 2022 - July 2023</p>
+                <p class="description">Worked in 6 different departments NIB, OCB, FTTH, EB/IT, MSC, ETR. Involved in
+                    MPLS networking and 4G and 5G analysis. Took hands on practical training on communication devices
+                    like DSLAM, OCLAN, IPTAX etc.
+                    Gained experience in marketing domain in the company.</p>
+            </div>
+
+            <div class="experience">
+                <p class="job-title">SURGE-Summer Research Intern</p>
+                <p class="company">IIT-KANPUR</p>
+                <p class="dates">May 2023 - Present</p>
+                <p class="description">Summer research internship on Digital Signal Processing under Dr.Abhihekh Patel.
+                    Involved in the implementation of molecular communication on biopharmaceutics</p>
+            </div>
+            <div class="experience">
+                <p class="job-title">Chairperson</p>
+                <p class="company">IETE-ISF(VIT-Vellore)</p>
+                <p class="dates">January2023 - Present</p>
+                <p class="description">IETE-ISFis a non-profit organization that enables motivated engineers to
+                    identify opportunities for improvement and networking.</p>
+            </div>
+            <div class="experience">
+                <p class="job-title">ML and Graphic Designing Intern</p>
+                <p class="company">The Machine Learning Company</p>
+                <p class="dates">July 2021- August 2021</p>
+                <p class="description">Remote internship in the field of Graphic designing and Machine Learning, got the
+                    opportunity to work on multiple projects with experts in these fields.</p>
+            </div>
+            <div class="experience">
+                <p class="job-title">Outbound Lead</p>
+                <p class="company">ANOKHA-NGO(VIT-Vellore)</p>
+                <p class="dates">January2022 - January 2023</p>
+                <p class="description"> Led the NGO as Vice-Chairperson and organized different sessions for
+                    unpriviliged children.
+                    Found out new,easy and innovative methods to teach and make children understand about importance of
+                    education.
+                    Overall incharge of different centres across the Vellore district.</p>
+            </div>
+        </section>
+        <hr>
+        <section class="eightsection" id="skills">
+            <section id="skills">
+                <span class="text-gray">Determination flows in my blood and Creativity swirls in my veins </span>
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <section class="skills">
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="html.jpg" alt="HTML">
+                                <h3>HTML</h3>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="css.jpg" alt="CSS">
+                                <h3>CSS</h3>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="java.jpg" alt="Java Script">
+                                <h3>Java</h3>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="python.jpg" alt="Python">
+                                <h3>Python</h3>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="figma.jpg" alt="Figma">
+                                <h3>Figma</h3>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="arduino.jpg" alt="Arduino">
+                                <h3>Arduino</h3>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="matlab.jpg" alt="Java">
+                                <h3>Matlab</h3>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-card">
+                                <img src="iot.jpg" alt="Java">
+                                <h3>Internet of Things</h3>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <hr>
+                    <section class="fifthsection" id="project">
+                        <section id="projects">
+                            <span class="text-gray">Here are some of my selected projects I have done lately. Feel free
+                                to check them out.</span>
+                            <h2>Projects</h2>
+
+                            <div class="project">
+                                <img src="parkinson.jpg" alt="Project 1">
+                                <div class="project-details">
+                                    <h3>Parkinson Detection Using Acoustic features from Speech</h3>
+                                    <p> Part of a 3 member team in developing Parkinson’s disease recognition using
+                                        Voice
+                                        Acoustic
+                                        features Statistical pooling
+                                        KNN, NN, LDA, Decision tree classifier, GB, UPDRS .
+                                        GB algorithms produced effective results for both acoustic characteristics and
+                                        UPDRS
+                                        specified data. The compared
+                                        results demonstrated that, among the chosen state-of-the-art procedures, the
+                                        UPDRS
+                                        established parameters attained
+                                        the best success rate</p>
+                                    <a href="https://ieeexplore.ieee.org/document/10090464">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="arm.jpg" alt="Project 2">
+                                <div class="project-details">
+                                    <h3>Optimizing PID controller for Single Joint Robotic Arm</h3>
+                                    <p>Developed a robotic arm with 2-Degrees of freedom.
+                                        This implementation involved usage of Arduino uno as the micro-controller and
+                                        servo-motors
+                                        for robotic arm movement.
+                                        Developed the MATLAB simulation of PID controller using the derived constants
+                                        and
+                                        applied
+                                        various optimization
+                                        methods on it.
+                                        Designed and Developed simulink graphs using the optimized parameters of the PID
+                                        controller.
+                                    </p>
+                                    <a href="http://www.ijarse.com/currentissue.php">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="diabetes.jpg" alt="Project 2">
+                                <div class="project-details">
+                                    <h3>DETECTION OF DIABETES USING LMR BASED OPTICAL FIBRE SENSOR</h3>
+                                    <p>The objective of this research is to assess the possibility of detecting acetone
+                                        using LMR
+                                        based sensors.
+                                        To find the sensor response and the sensitivity with respect to wavelength and
+                                        intensity
+                                        with different concentration of
+                                        acetone.
+                                        Using SnO2 as the supporting substance an analysis of LMR based fibre optic
+                                        sensor
+                                        for
+                                        acetone detection was
+                                        conducted. By depositing SnO2 thin films of various thicknesses, the sensing
+                                        probe
+                                        was
+                                        tuned, and the corresponding two
+                                        LMR peaks at various wavelengths and intensities were identified.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="5g.jpg" alt="Project 2">
+                                <div class="project-details">
+                                    <h3>Orthogonal Frequency Division Multiplexing Based on Digital Communication System
+                                    </h3>
+                                    <p>In Dynamic Spectrum Access a secondary or a Cognitive user can transmit over
+                                        distributed frequencies, while not interfering with the primary user. This leads
+                                        to Multicarrier communication transmitting data across the channel in various
+                                        frequency subcarriers at a reduced data rate Filter Bank Multi-Carrier,
+                                        Universal Filtered Multi-Carrier, Generalized Frequency Division Multiplexing
+                                        and Filtered Orthogonal Frequency Division Multiplexing are the potential
+                                        competent new waveforms for 5G communication systems. This paper presents a
+                                        review of the OFDM based modulation and demodulation technique and compute
+                                        parameters like efficiency in spectrum utilization, complexity, and robustness
+                                        of the scheme using constellation diagrams.
+                                        Keywords— 5G, OFDM, Modulation, Multiplexing, Spectrum pooling, Carrier,
+                                        Constellation diagrams
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="alliance.jpg" alt="Project 2">
+                                <div class="project-details">
+                                    <h3>Website for Alpha Alliance Medical Trading LLC</h3>
+                                    <p>
+                                        Designed and Developed and d esigned the UI/UX of the website and worked for the
+                                        frontend
+                                        section.
+                                    </p>
+                                    <a href="https://alphaalliance.netlify.app/">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="recruitment.gif" alt="Project 2">
+                                <div class="project-details">
+                                    <h3>
+                                        IETE Recruitment Portal</h3>
+                                    <p>A recruitment portal built for conducting interviews for the new recruits in
+                                        IETE-ISF
+                                        .The
+                                        portal is highly responsive and includes various security featureslike detecting
+                                        Tab
+                                        switch,
+                                        JWT authentication
+                                        for every API request. Auto submission on the test timeout etc.
+                                    </p>
+                                    <a href="https://iete-vit-recruitment-portal.netlify.app/">Learn More</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <span class="text-gray">Get in Touch </span>
+                            <section class="contact" id="contact">
+                                <h2>Contact Me</h2>
+                                <div class="contact-form">
+                                    <form>
+                                        <input type="text" placeholder="Name" class="input-field">
+                                        <input type="email" placeholder="Email" class="input-field">
+                                        <textarea placeholder="Message" class="textarea-field"></textarea>
+                                        <button type="submit" class="submit-btn">Send Message</button>
+                                    </form>
+                                </div>
+                            </section>
+
+                            <section class="sixthsection">
+                                <footer>
+                                    <div class="footer-links">
+                                        <a href="#home">Home</a>
+                                        <a href="#about">About</a>
+                                        <a href="#education">Education</a>
+                                        <a href="#experience">Experience</a>
+                                        <a href="#skills">Skills</a>
+                                        <a href="#project">Projects</a>
+                                        <a href="#contact">Contact Me</a>
+                                    </div>
+                                    <div class="footer-social">
+                                        <a href="https://instagram.com/mahek_uknow?igshid=ZDc4ODBmNjlmNQ=="><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/mahek-poddar-997b78211/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <p>&copy; 2023 Mahek Poddar - Portfolio. All rights reserved.</p>
+                                </footer>
+                                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                                <script>
+                                    var typed = new Typed('#element', {
+                                        strings: ['Research Geek', 'UI/UX designer', 'Data Analyst', 'Engineer specializing in Electronics and Communication'],
+                                        typeSpeed: 30,
+                                    });
+                                </script>
+</body>
+
+</html>
